@@ -1,6 +1,6 @@
 body {
   background-color: rgb(255 230 44);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .content {
   margin-left: 20%;
@@ -64,4 +64,14 @@ body {
   flex-direction: column;
   gap: -1000000000px;
   padding: 0;
+}
+.card:hover {
+  transform: scale(1.25);
+  z-index: 10;
+  transition: ease 0.5s;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+.card:hover ~ .card,
+.grid:hover .card:not(:hover) {
+  filter: blur(1px);
 }
